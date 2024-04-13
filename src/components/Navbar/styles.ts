@@ -28,6 +28,10 @@ export const Container = styled.nav`
       background-color: ${({theme}) => theme.colors['dark-gray']};
       color: ${({ theme }) => theme.colors.light};
     }
+
+    &:active{
+      transform: scale(0.9);
+    }
   }
 `;
 
