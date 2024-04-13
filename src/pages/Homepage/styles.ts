@@ -8,6 +8,7 @@ export const HeaderContent = styled.div`
     align-items: center;
     padding: 160px 80px;
     gap: 24px;
+    margin: 0 auto;
 
     .header-title-container{
       & h1 {
@@ -64,13 +65,13 @@ export const HeaderContent = styled.div`
         flex-direction: column-reverse;
         gap: 32px;
         padding: 80px 80px;
-      }
 
-      .header-title-container{
+        .header-title-container{
         text-align: center;
 
         & .typing-text {
           margin: 0 auto;
+         }
         }
       }
     `}
