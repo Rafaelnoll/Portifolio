@@ -9,15 +9,15 @@ export default function Navbar(){
 
         <NavList>
           <div className="nav-link">
-            <a>Projetos</a>
+            <a href="#projects">Projetos</a>
             <div className="nav-outline"/>
           </div>
           <div className="nav-link">
-            <a>Sobre Mim</a>
+            <a href="#aboutMe">Sobre Mim</a>
             <div className="nav-outline"/>
           </div>
           <div className="nav-link">
-            <a>Tecnologias</a>
+            <a href="#tecnologies">Tecnologias</a>
             <div className="nav-outline"/>
           </div>
         </NavList>

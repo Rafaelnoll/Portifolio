@@ -39,13 +39,13 @@ export const NavList = styled.div`
 
   & .nav-link {
     cursor: pointer;
-    height: 32px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 
     & a {
       transition: all 0.3s;
+      text-decoration: none;
     }
 
     & .nav-outline {
