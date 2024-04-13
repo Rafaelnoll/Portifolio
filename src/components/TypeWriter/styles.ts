@@ -7,13 +7,10 @@ const typingAnimation = keyframes`
 `
 
 export const TypingTextContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
   span {
     border-right: 2px solid ${({theme}) => theme.colors["gray"]};
     padding-right: 8px;
     animation: ${typingAnimation} 1s step-end infinite;
+    white-space: nowrap;
   }
 `;

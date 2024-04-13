@@ -12,5 +12,14 @@ export default {
     "secondary-purple": "#A160FC",
     "primary-green": "#24ff96",
     "secondary-green": "#24CE85",
+  },
+  "companyColors": {
+    "primary": "#00d1b2",
+    "secondary": "#f9b246",
+    "tertiary": "#008cff",
+  },
+  "media": {
+    "mobile": "(max-width: 750px)",
+    "tablet": "(max-width: 900px)",
   }
 }

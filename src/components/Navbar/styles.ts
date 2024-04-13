@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.nav`
   display: flex;
@@ -68,4 +68,10 @@ export const NavList = styled.div`
       }
     }
   }
+
+  ${({theme}) => css`
+    @media screen and ${theme.media.tablet} {
+      display: none;
+    }
+  `}
 `;
