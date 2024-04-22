@@ -55,7 +55,7 @@ export const HeaderContent = styled.div`
       padding: 2px;
 
       img {
-        max-width: 250px;
+        max-width: 300px;
         border-radius: 50%;
       }
     }
