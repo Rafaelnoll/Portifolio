@@ -1,7 +1,5 @@
 import styled, { css } from "styled-components";
 
-
-
 export const HeaderContent = styled.div`
     display: flex;
     justify-content: space-between;
@@ -75,4 +73,21 @@ export const HeaderContent = styled.div`
         }
       }
     `}
+`;
+
+export const AboutMeContainer = styled.div`
+  padding: 32px 0;
+  width: 100%;
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: ${({ theme }) => theme.colors.light };
+  }
+
+  .about-me-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 `;
