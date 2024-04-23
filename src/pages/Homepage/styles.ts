@@ -91,3 +91,47 @@ export const AboutMeContainer = styled.div`
     gap: 12px;
   }
 `;
+
+export const ProjectsContainer = styled.div`
+  padding: 32px 0;
+  width: 100%;
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: ${({ theme }) => theme.colors.light };
+  }
+
+  .tec-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    .tec {
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+      background-color: ${({ theme }) => theme.colors.dark};
+      padding: 32px 16px;
+      border-radius: 16px;
+      gap: 16px;
+      min-width: 150px;
+      min-height: 180px;
+
+      img {
+        width:100%;
+        max-width: 80px;
+        flex: 1;
+        object-fit: contain;
+      }
+
+      strong {
+        color: ${({ theme }) => theme.colors.light};
+        font-size: 22px;
+      }
+    }
+  }
+`;

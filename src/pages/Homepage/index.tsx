@@ -1,10 +1,19 @@
 import Navbar from "../../components/Navbar";
-import { HeaderContent, AboutMeContainer } from "./styles";
+import { HeaderContent, AboutMeContainer, ProjectsContainer } from "./styles";
 import TypeWriter from "../../components/TypeWriter";
 import MyPhoto from '../../assets/images/me.jpeg';
 import ConvertLogo from '../../assets/images/convert_logo.png';
 import { Container } from "../../components/Container";
 import useTranslate from "../../hooks/useTranslate";
+
+// Tec Logos
+import JSLogo from '../../assets/images/js.png';
+import ReactLogo from '../../assets/images/React.png';
+import NodeLogo from '../../assets/images/node-js.png';
+import LinuxLogo from '../../assets/images/linux.png';
+import GitLogo from '../../assets/images/Git.png';
+import SQLLogo from '../../assets/images/Sql_logo.png';
+import MongoDbLogo from '../../assets/images/mongo.png';
 
 export default function Homepage(){
 
@@ -42,6 +51,42 @@ export default function Homepage(){
             </div>
            </Container>
           </AboutMeContainer>
+          <ProjectsContainer>
+            <Container>
+              <h2>{translate("Tecnologies")}</h2>
+
+              <div className="tec-container">
+                <div className="tec">
+                  <img src={JSLogo} />
+                  <strong>Javascript</strong>
+                </div>
+                <div className="tec">
+                  <img src={ReactLogo} />
+                  <strong>React.js</strong>
+                </div>
+                <div className="tec">
+                  <img src={NodeLogo} />
+                  <strong>Node.js</strong>
+                </div>
+                <div className="tec">
+                  <img src={LinuxLogo} />
+                  <strong>Linux</strong>
+                </div>
+                <div className="tec">
+                  <img src={GitLogo} />
+                  <strong>Git</strong>
+                </div>
+                <div className="tec">
+                  <img src={SQLLogo} />
+                  <strong>SQL</strong>
+                </div>
+                <div className="tec">
+                  <img src={MongoDbLogo} />
+                  <strong>NoSQL</strong>
+                </div>
+              </div>
+            </Container>
+          </ProjectsContainer>
       </main>
     </>
   )
