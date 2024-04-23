@@ -4,9 +4,10 @@ export const HeaderContent = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 160px 80px;
+    padding: 160px 0;
     gap: 24px;
     margin: 0 auto;
+    max-width: 1000px;
 
     .header-title-container{
       & h1 {
