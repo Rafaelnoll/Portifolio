@@ -77,7 +77,7 @@ export const HeaderContent = styled.div`
 `;
 
 export const AboutMeContainer = styled.div`
-  padding: 32px 0;
+  padding: 64px 0;
   width: 100%;
 
   h2 {
@@ -93,8 +93,8 @@ export const AboutMeContainer = styled.div`
   }
 `;
 
-export const ProjectsContainer = styled.div`
-  padding: 32px 0;
+export const TecnologiesContainer = styled.div`
+  padding: 64px 0;
   width: 100%;
 
   h2 {
@@ -135,4 +135,8 @@ export const ProjectsContainer = styled.div`
       }
     }
   }
+`;
+
+export const MainContent = styled.div`
+  background: ${({ theme }) => `linear-gradient(transparent, 15%, ${theme.colors.dark})`};
 `;

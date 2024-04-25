@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar";
-import { HeaderContent, AboutMeContainer, ProjectsContainer } from "./styles";
+import { HeaderContent, AboutMeContainer, TecnologiesContainer, MainContent } from "./styles";
 import TypeWriter from "../../components/TypeWriter";
 import MyPhoto from '../../assets/images/me.jpeg';
 import ConvertLogo from '../../assets/images/convert_logo.png';
@@ -40,53 +40,55 @@ export default function Homepage(){
         </Container>
       </header>
       <main>
-          <AboutMeContainer id="aboutMe">
-           <Container>
-            <h2>{translate("About_Me")}</h2>
-
-            <div className="about-me-text">
-              <p>👋 Muito prazer, meu nome é Rafael Noll. Atualmente, tenho 19 anos e estou sempre em busca de me aperfeiçoar e ganhar mais experiência.</p>
-              <p>💡 Sou uma pessoa muito curiosa quando o assunto é tecnologia. Comecei a estudar programação no início de 2021 em um projeto chamado #TeuFuturo. Desde então, venho me aprofundando em tecnologias como JavaScript/TypeScript, React, React Native e Node.</p>
-              <p>🚀 Além do Front-End, também possuo conhecimento em Back-End utilizando Node.js e banco de dados, entre outras tecnologias. Estou sempre em busca de mais experiências e conhecimentos.</p>
-            </div>
-           </Container>
-          </AboutMeContainer>
-          <ProjectsContainer>
+          <MainContent>
+            <AboutMeContainer id="aboutMe">
             <Container>
-              <h2>{translate("Tecnologies")}</h2>
+              <h2>{translate("About_Me")}</h2>
 
-              <div className="tec-container">
-                <div className="tec">
-                  <img src={JSLogo} />
-                  <strong>Javascript</strong>
-                </div>
-                <div className="tec">
-                  <img src={ReactLogo} />
-                  <strong>React.js</strong>
-                </div>
-                <div className="tec">
-                  <img src={NodeLogo} />
-                  <strong>Node.js</strong>
-                </div>
-                <div className="tec">
-                  <img src={LinuxLogo} />
-                  <strong>Linux</strong>
-                </div>
-                <div className="tec">
-                  <img src={GitLogo} />
-                  <strong>Git</strong>
-                </div>
-                <div className="tec">
-                  <img src={SQLLogo} />
-                  <strong>SQL</strong>
-                </div>
-                <div className="tec">
-                  <img src={MongoDbLogo} />
-                  <strong>NoSQL</strong>
-                </div>
+              <div className="about-me-text">
+                <p>👋 Muito prazer, meu nome é Rafael Noll. Atualmente, tenho 19 anos e estou sempre em busca de me aperfeiçoar e ganhar mais experiência.</p>
+                <p>💡 Sou uma pessoa muito curiosa quando o assunto é tecnologia. Comecei a estudar programação no início de 2021 em um projeto chamado #TeuFuturo. Desde então, venho me aprofundando em tecnologias como JavaScript/TypeScript, React, React Native e Node.</p>
+                <p>🚀 Além do Front-End, também possuo conhecimento em Back-End utilizando Node.js e banco de dados, entre outras tecnologias. Estou sempre em busca de mais experiências e conhecimentos.</p>
               </div>
             </Container>
-          </ProjectsContainer>
+            </AboutMeContainer>
+            <TecnologiesContainer>
+              <Container>
+                <h2>{translate("Tecnologies")}</h2>
+
+                <div className="tec-container">
+                  <div className="tec">
+                    <img src={JSLogo} />
+                    <strong>Javascript</strong>
+                  </div>
+                  <div className="tec">
+                    <img src={ReactLogo} />
+                    <strong>React.js</strong>
+                  </div>
+                  <div className="tec">
+                    <img src={NodeLogo} />
+                    <strong>Node.js</strong>
+                  </div>
+                  <div className="tec">
+                    <img src={LinuxLogo} />
+                    <strong>Linux</strong>
+                  </div>
+                  <div className="tec">
+                    <img src={GitLogo} />
+                    <strong>Git</strong>
+                  </div>
+                  <div className="tec">
+                    <img src={SQLLogo} />
+                    <strong>SQL</strong>
+                  </div>
+                  <div className="tec">
+                    <img src={MongoDbLogo} />
+                    <strong>NoSQL</strong>
+                  </div>
+                </div>
+              </Container>
+            </TecnologiesContainer>
+          </MainContent>
       </main>
     </>
   )
