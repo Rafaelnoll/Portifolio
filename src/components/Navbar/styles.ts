@@ -6,7 +6,6 @@ export const Container = styled.nav`
 
   width: 100%;
   padding: 32px 0;
-  background: ${({theme}) => `linear-gradient(${theme.colors.dark} 46%, ${theme.colors.black} 100%)`};
 
   & .navbar-left-content{
     display: flex;

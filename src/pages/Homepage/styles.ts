@@ -140,3 +140,54 @@ export const TecnologiesContainer = styled.div`
 export const MainContent = styled.div`
   background: ${({ theme }) => `linear-gradient(transparent, 15%, ${theme.colors.dark})`};
 `;
+
+export const ProjectsContainer = styled.div`
+  padding: 64px 0;
+  width: 100%;
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: ${({ theme }) => theme.colors.light };
+  }
+
+  .projects-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    background: ${({ theme }) => theme.colors.light};
+    border-radius: 16px;
+
+    img {
+      border-radius: 16px 16px 0 0;
+      min-height: 250px;
+      max-width: 550px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .project-desc {
+      padding: 16px;
+    }
+
+    strong {
+      color: ${({ theme }) => theme.colors.dark};
+      display: block;
+      margin-bottom: 8px;
+      font-size: 24px;
+    }
+
+    span {
+      color: ${({ theme }) => theme.colors['dark-gray']};
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+  }
+`;

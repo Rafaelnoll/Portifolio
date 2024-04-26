@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar";
-import { HeaderContent, AboutMeContainer, TecnologiesContainer, MainContent } from "./styles";
+import { HeaderContent, AboutMeContainer, TecnologiesContainer, MainContent, ProjectsContainer } from "./styles";
 import TypeWriter from "../../components/TypeWriter";
 import MyPhoto from '../../assets/images/me.jpeg';
 import ConvertLogo from '../../assets/images/convert_logo.png';
@@ -14,6 +14,10 @@ import LinuxLogo from '../../assets/images/linux.png';
 import GitLogo from '../../assets/images/Git.png';
 import SQLLogo from '../../assets/images/Sql_logo.png';
 import MongoDbLogo from '../../assets/images/mongo.png';
+
+// Projects Images
+import MyKanban from '../../assets/images/MyKanban.png';
+import FreePlay from '../../assets/images/FreePlay.png';
 
 export default function Homepage(){
 
@@ -88,6 +92,29 @@ export default function Homepage(){
                 </div>
               </Container>
             </TecnologiesContainer>
+            <ProjectsContainer>
+              <Container>
+                <h2>{translate("Projects")}</h2>
+
+                <div className="projects-list">
+                    <div className="project-card">
+                      <img src={MyKanban} />
+                      <div className="project-desc">
+                        <strong>My Kanban</strong>
+                        <span>Página de gerenciamento de atividades no estilo Kanban</span>
+                      </div>
+                    </div>
+
+                    <div className="project-card">
+                      <img src={FreePlay} />
+                      <div className="project-desc">
+                        <strong>Free Play</strong>
+                        <span>Site para mostrar os principais jogos grátis do momento</span>
+                      </div>
+                    </div>
+                </div>
+              </Container>
+            </ProjectsContainer>
           </MainContent>
       </main>
     </>
