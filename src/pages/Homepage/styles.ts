@@ -163,10 +163,21 @@ export const ProjectsContainer = styled.div`
     flex-direction: column;
     background: ${({ theme }) => theme.colors.light};
     border-radius: 16px;
+    max-width: 450px;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      text-decoration: none;
+    }
 
     img {
       border-radius: 16px 16px 0 0;
       min-height: 250px;
+      max-height: 300px;
       max-width: 550px;
       object-fit: cover;
       width: 100%;
@@ -189,5 +200,32 @@ export const ProjectsContainer = styled.div`
       margin-bottom: 8px;
       font-size: 16px;
     }
+
   }
 `;
+
+export const FooterContainer = styled.div`
+  padding: 24px 0;
+
+  background-color: ${({ theme }) => theme.colors['dark-gray']};
+
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.light};
+    font-size: 16px;
+  }
+
+  img {
+    width: 28px;
+    transition: transform 0.5s;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+
+  .social-links {
+    display: flex;
+    gap: 16px;
+  }
+`

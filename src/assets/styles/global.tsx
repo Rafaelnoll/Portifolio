@@ -18,4 +18,10 @@ export const GlobalStyles = createGlobalStyle`
     background-size: 100%;
     backdrop-filter: blur(5px);
   }
+
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 `

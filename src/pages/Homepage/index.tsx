@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar";
-import { HeaderContent, AboutMeContainer, TecnologiesContainer, MainContent, ProjectsContainer } from "./styles";
+import { HeaderContent, AboutMeContainer, TecnologiesContainer, MainContent, ProjectsContainer, FooterContainer } from "./styles";
 import TypeWriter from "../../components/TypeWriter";
 import MyPhoto from '../../assets/images/me.jpeg';
 import ConvertLogo from '../../assets/images/convert_logo.png';
@@ -18,6 +18,11 @@ import MongoDbLogo from '../../assets/images/mongo.png';
 // Projects Images
 import MyKanban from '../../assets/images/MyKanban.png';
 import FreePlay from '../../assets/images/FreePlay.png';
+
+// Social Links
+import LinkdinLogo from '../../assets/images/linkedin.svg';
+import GithubLogo from '../../assets/images/github.svg';
+import YoutubeLogo from '../../assets/images/youtube.svg';
 
 export default function Homepage(){
 
@@ -98,25 +103,44 @@ export default function Homepage(){
 
                 <div className="projects-list">
                     <div className="project-card">
-                      <img src={MyKanban} />
-                      <div className="project-desc">
-                        <strong>My Kanban</strong>
-                        <span>Página de gerenciamento de atividades no estilo Kanban</span>
-                      </div>
+                      <a href="https://github.com/Rafaelnoll/kanban_front_end" target="_blank">
+                        <img src={MyKanban} />
+                        <div className="project-desc">
+                          <strong>My Kanban</strong>
+                          <span>Página de gerenciamento de atividades no estilo Kanban</span>
+                        </div>
+                      </a>
                     </div>
 
                     <div className="project-card">
-                      <img src={FreePlay} />
-                      <div className="project-desc">
-                        <strong>Free Play</strong>
-                        <span>Site para mostrar os principais jogos grátis do momento</span>
-                      </div>
+                      <a href="https://play-free-jet.vercel.app/" target="_blank">
+                        <img src={FreePlay} />
+                        <div className="project-desc">
+                          <strong>Free Play</strong>
+                          <span>Site para mostrar os principais jogos grátis do momento</span>
+                        </div>
+                        </a>
                     </div>
                 </div>
               </Container>
             </ProjectsContainer>
           </MainContent>
       </main>
+      <footer>
+          <FooterContainer>
+            <Container>
+                 <div className="flex-container">
+                    <span>Feito por <a href="https://br.linkedin.com/in/rafael-noll-ds" target="_blank">Rafael Noll</a></span>
+
+                    <div className="social-links">
+                        <a target="_blank" href="https://br.linkedin.com/in/rafael-noll-ds" title="LinkedIn"><img src={LinkdinLogo}/></a>
+                        <a target="_blank" href="https://github.com/Rafaelnoll" title="Github"><img src={GithubLogo}/></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCJTwVoFy1uTfY20wVtenvOg" title="Youtube"><img src={YoutubeLogo}/></a>
+                    </div>
+                 </div>
+            </Container>
+          </FooterContainer>
+      </footer>
     </>
   )
 }

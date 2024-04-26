@@ -28,7 +28,9 @@ export default function Navbar(){
       </div>
 
       <button className="nav-contact-button">
+       <a href="https://github.com/Rafaelnoll" target="_blank">
         {translate('Contact_Me')}
+       </a>
       </button>
     </Container>
   )

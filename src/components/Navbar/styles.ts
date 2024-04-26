@@ -16,16 +16,23 @@ export const Container = styled.nav`
   & .nav-contact-button {
     font-weight: 700;
     background-color: ${({theme}) => theme.colors.light};
-    color: ${({ theme }) => theme.colors['dark-gray']};
     font-size: 16px;
     cursor: pointer;
     border-radius: 100px;
     transition: all 0.4s;
     padding: 14px 16px;
 
+    a {
+      text-decoration: none;
+      color: ${({ theme }) => theme.colors['dark-gray']};
+    }
+
     &:hover {
       background-color: ${({theme}) => theme.colors['dark-gray']};
-      color: ${({ theme }) => theme.colors.light};
+
+      a {
+        color: ${({ theme }) => theme.colors.light};
+      }
     }
 
     &:active{
