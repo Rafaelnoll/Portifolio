@@ -61,7 +61,7 @@ export default function Homepage(){
               </div>
             </Container>
             </AboutMeContainer>
-            <TecnologiesContainer>
+            <TecnologiesContainer id="tecnologies">
               <Container>
                 <h2>{translate("Tecnologies")}</h2>
 
@@ -97,7 +97,7 @@ export default function Homepage(){
                 </div>
               </Container>
             </TecnologiesContainer>
-            <ProjectsContainer>
+            <ProjectsContainer id="projects">
               <Container>
                 <h2>{translate("Projects")}</h2>
 

@@ -13,15 +13,17 @@ export default function Navbar(){
 
         <NavList>
           <div className="nav-link">
-            <a href="#projects">{translate('Projects')}</a>
-            <div className="nav-outline"/>
-          </div>
-          <div className="nav-link">
             <a href="#aboutMe">{translate('About_Me')}</a>
             <div className="nav-outline"/>
           </div>
+
           <div className="nav-link">
             <a href="#tecnologies">{translate('Tecnologies')}</a>
+            <div className="nav-outline"/>
+          </div>
+
+          <div className="nav-link">
+            <a href="#projects">{translate('Projects')}</a>
             <div className="nav-outline"/>
           </div>
         </NavList>
